@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=IM+Fell+Great+Primer+SC&family=Open+Sans&display=swap');
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #44b;
+}
+
+li{
+    list-style: none;
+    margin-top: 5px;
+}
+.nav-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list a{
+    padding: 10px;
+    border-right: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans', serif;
+}
+
+.nav-list li:last-of-type a{
+    border: none;
+}
+
+.full-width{
+    display: none;
+}
+
+.short-width{
+    display: flex;
+}
+
+.sub-nav{
+    display: flex;
+}
+
+.search-form{
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    height: 30px;
+}
+
+input{
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #44b;
+}
+
+button{
+    padding: 2px;
+    padding-top: 5px;
+    margin-right: 10px;
+    background-color: #44b;
+    color: white;
+    border: none;
+}
+
+.company-name{
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-size: 36px;
+    color: #44b;
+    padding: 5px;
+    padding-bottom: 20px;
+    margin-right: 35px;
+    margin-left: 30px;
+}
+
+.credit-offer{
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: 'Open Sans', sans-serif;
+    height: 32px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+@media (min-width: 768px){
+    .full-width{
+        display: flex;
+    }
+    .short-width{
+        display: none;
+    }
+}

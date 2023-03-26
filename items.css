@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&display=swap');
+
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-grow: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 20%;
+    margin-right: 20px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px -2px black;
+}
+
+.item-name{
+    background-color: #44b;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+}
+
+.item-description{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+}
+.add-item{
+    background-color: #23235f;
+    color: white;
+    border-radius: 100%;
+    padding: 10px;
+    padding-right: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.fact-name{
+    font-weight: bolder;
+}
+
+.fact-line{
+    background-color: #44b;
+    color: white;
+    padding: 5px;
+}
+
+@media (max-width: 768px){
+    /* .items{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    } This wasn't working as intended*/
+    .item{
+        font-size: larger;
+        flex-basis: 100%;
+    }
+}
+
